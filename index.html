@@ -1,0 +1,82 @@
+
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Excel Scout — Resultado em Excel sem enrolação</title>
+  <meta name="description" content="Domine Excel e vire a(o) caçador(a) de oportunidades que transforma dados em dinheiro e decisões. Aulas diretas, templates e dashboards Efeito UAU.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <!-- Tailwind via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; }
+    .container { max-width: 1120px; }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-emerald-50 to-white text-slate-900">
+  <!-- NAV -->
+  <header class="sticky top-0 z-40 backdrop-blur bg-white/70 border-b border-emerald-100">
+    <div class="container mx-auto px-4 py-3 flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <div class="w-8 h-8 rounded-xl bg-emerald-600 grid place-items-center text-white font-semibold">X</div>
+        <span class="font-semibold">Excel Scout</span>
+      </div>
+      <nav class="hidden md:flex items-center gap-4 text-sm">
+        <a href="#conteudo" class="hover:text-emerald-700">Conteúdo</a>
+        <a href="#bonus" class="hover:text-emerald-700">Bônus</a>
+        <a href="#depoimentos" class="hover:text-emerald-700">Provas</a>
+        <a href="#faq" class="hover:text-emerald-700">FAQ</a>
+      </nav>
+      <a id="ctaTop" href="https://seu-checkout-ou-whatsapp" target="_blank" class="inline-flex items-center gap-2 bg-emerald-600 text-white px-4 py-2 rounded-2xl">
+        <span>Quero entrar</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="container mx-auto px-4 pt-14 pb-10">
+    <div class="grid md:grid-cols-2 gap-8 items-center">
+      <div>
+        <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">
+          Excel Scout: <span class="text-emerald-700">resultado em Excel</span> sem enrolação
+        </h1>
+        <p class="mt-4 text-lg text-slate-700">Domine Excel e vire a(o) caçador(a) de oportunidades que transforma dados em dinheiro e decisões.</p>
+        <ul class="mt-6 space-y-2">
+          <li class="flex items-start gap-2"><span class="text-emerald-600 mt-1">✔</span><span>Planilhas e automações que resolvem problemas reais</span></li>
+          <li class="flex items-start gap-2"><span class="text-emerald-600 mt-1">✔</span><span>Dashboards prontos para publicar no LinkedIn</span></li>
+          <li class="flex items-start gap-2"><span class="text-emerald-600 mt-1">✔</span><span>Atalhos de análise: do zero ao insight em minutos</span></li>
+          <li class="flex items-start gap-2"><span class="text-emerald-600 mt-1">✔</span><span>Modelos de apresentação para vender seu trabalho</span></li>
+          <li class="flex items-start gap-2"><span class="text-emerald-600 mt-1">✔</span><span>Checklist Excel Scout</span></li>
+        </ul>
+        <div class="mt-6 flex flex-wrap items-center gap-3">
+          <a id="ctaHero" href="https://seu-checkout-ou-whatsapp" target="_blank" class="inline-flex items-center gap-2 bg-emerald-600 text-white px-6 py-3 rounded-2xl text-base">
+            <span>🚀 Entrar agora</span>
+          </a>
+          <a id="waLink" href="https://wa.me/5599999999999?text=Tenho%20d%C3%BAvidas%20sobre%20o%20Excel%20Scout" target="_blank" class="text-emerald-700 underline">Tirar dúvidas no WhatsApp</a>
+        </div>
+        <div class="mt-3 text-sm text-slate-600 flex items-center gap-2">
+          <span>🛡</span> Garantia incondicional de 7 dias
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="border-t">
+    <div class="container mx-auto px-4 py-8 text-sm text-slate-600 flex flex-col md:flex-row gap-3 items-center justify-between">
+      <div>© <span id="year"></span> Excel Scout. Todos os direitos reservados.</div>
+      <div class="flex gap-4">
+        <a href="#" class="hover:text-emerald-700">Termos</a>
+        <a href="#" class="hover:text-emerald-700">Privacidade</a>
+        <a href="https://instagram.com/karenabecia" target="_blank" class="hover:text-emerald-700">@karenabecia</a>
+      </div>
+    </div>
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
