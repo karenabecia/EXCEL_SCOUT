@@ -43,17 +43,6 @@
       justify-content: center;
       align-items: center;
     }
-    .md\:grid-cols-2 {
-      grid-template-columns: 1fr !important;
-    }
-    @media (min-width: 768px) {
-      .md\:grid-cols-2 {
-        grid-template-columns: 1fr 1fr !important;
-      }
-      .grid {
-        gap: 3rem;
-      }
-    }
     .img-center {
       display: flex;
       justify-content: center;
@@ -76,7 +65,7 @@
 <body>
   <header class="topbar">
     <div class="container flex flex-col md:flex-row justify-center md:justify-between items-center">
-      <img src="logo-excel-scout.png" alt="Logo Excel Scout" class="h-14 mb-2 md:mb-0"><!-- Alterado de h-8 para h-14 -->
+      <img src="logo-excel-scout.png" alt="Logo Excel Scout" class="h-14 mb-2 md:mb-0">
       <div class="flex gap-3 justify-center">
         <a href="#teste" class="btn btn-primary">📂 Baixar teste de Excel grátis</a>
         <a href="#contato" class="btn btn-ghost">👥 Preciso treinar minha equipe</a>
@@ -104,8 +93,9 @@
     </div>
   </section>
 
+  <!-- TESTE: Quebra os blocos, deixando o texto embaixo do formulário -->
   <section id="teste" class="border-t border-soft">
-    <div class="container grid md:grid-cols-2 gap-12 items-center">
+    <div class="container flex flex-col gap-8 items-center">
       <div>
         <h2 class="text-2xl font-bold mb-4">Baixe grátis o Teste de Excel</h2>
         <form class="mt-4 space-y-3 max-w-md mx-auto">
@@ -121,8 +111,9 @@
     </div>
   </section>
 
+  <!-- PREÇO: Quebra os blocos, deixando "Você vai aprender" embaixo -->
   <section id="preco" class="border-t border-soft">
-    <div class="container grid md:grid-cols-2 gap-12 items-start">
+    <div class="container flex flex-col gap-8 items-center">
       <div>
         <h2 class="text-3xl font-bold mb-4">Oferta especial</h2>
         <p class="mt-2 text-lg">17 aulas, missões práticas, extras e 1 ano de acesso. Suporte Nota 11 para tirar dúvidas.</p>
