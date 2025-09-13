@@ -35,7 +35,93 @@
   </style>
 </head>
 <body>
-  <h1>Página do Excel Scout</h1>
-  <p>Este é o arquivo final <code>index.html</code>. Suba na pasta <code>docs/</code> do seu repositório.</p>
+  <header class="topbar">
+    <div class="container mx-auto px-4 py-2 flex justify-between items-center">
+      <img src="logo-excel-scout.png" alt="Logo Excel Scout" class="h-8">
+      <div class="flex gap-3">
+        <a href="#teste" class="btn btn-primary">📂 Baixar teste de Excel grátis</a>
+        <a href="#contato" class="btn btn-ghost">👥 Preciso treinar minha equipe</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero-grad py-16">
+    <div class="container mx-auto grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h1 class="text-4xl font-extrabold leading-tight">Esqueça “básico vs. avançado”. <span class="accent">Excel é resolver problemas.</span></h1>
+        <p class="mt-4">Depois de 20+ anos de treinamentos corporativos, entendi que um profissional de Excel precisa saber <strong>usar as principais ferramentas em conjunto para resolver problemas</strong>. É isso que o <strong>Excel Scout</strong> oferece: um kit de sobrevivência para você tirar Nota 11.</p>
+        <ul class="mt-4 space-y-2">
+          <li>✔️ 17 aulas de até 11 minutos</li>
+          <li>✔️ 1 ano de acesso</li>
+          <li>✔️ Suporte Nota 11</li>
+        </ul>
+        <a href="#preco" class="btn btn-primary mt-6">🔥 Preciso disso agora</a>
+      </div>
+      <div>
+        <img src="assets/karen-foto.jpg" alt="Karen Abecia" class="rounded-2xl shadow-soft">
+      </div>
+    </div>
+  </section>
+
+  <section id="teste" class="py-16 border-t border-soft">
+    <div class="container mx-auto grid md:grid-cols-2 gap-10">
+      <div>
+        <h2 class="text-2xl font-bold">Baixe grátis o Teste de Excel</h2>
+        <form class="mt-4 space-y-3">
+          <input type="text" placeholder="Seu nome" required>
+          <input type="tel" placeholder="WhatsApp" required>
+          <button type="submit" class="btn btn-primary w-full">📂 Baixar agora</button>
+        </form>
+        <p class="mt-2 text-sm">O arquivo estará em <code>docs/assets/teste-excel.xlsx</code>.</p>
+      </div>
+      <div>
+        <p class="text-neutral-700">O teste contém questões baseadas em necessidades reais de empresas e é inspirado em processos seletivos de multinacionais.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="preco" class="py-16 border-t border-soft">
+    <div class="container mx-auto grid md:grid-cols-2 gap-10 items-start">
+      <div>
+        <h2 class="text-3xl font-bold">Oferta especial</h2>
+        <p class="mt-2">17 aulas, missões práticas, extras e 1 ano de acesso. Suporte Nota 11 para tirar dúvidas.</p>
+        <div class="text-4xl font-extrabold mt-4">R$ 197</div>
+        <p class="text-sm">Ou em até 12x de R$ 20,37</p>
+        <a href="https://pay.hotmart.com/M16852236B?checkoutMode=10" target="_blank" class="btn btn-primary mt-6">🔥 Preciso disso agora</a>
+      </div>
+      <div>
+        <h3 class="font-semibold mb-2">Você vai aprender</h3>
+        <ul class="space-y-2 text-sm">
+          <li>• Combinar ferramentas para resolver problemas</li>
+          <li>• Automatizar relatórios</li>
+          <li>• Criar dashboards e gráficos profissionais</li>
+          <li>• Evitar erros clássicos em planilhas</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="depoimentos" class="py-16 border-t border-soft">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-10">O que dizem os alunos</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <blockquote class="p-6 rounded-2xl border border-soft bg-white shadow-soft">“Aprendi coisas muito além do que poderia imaginar, nota 11 ai vou eu.” — Henrique</blockquote>
+        <blockquote class="p-6 rounded-2xl border border-soft bg-white shadow-soft">“Antes achei que sabia, mas fazia amontoado de números. Agora aprendo de verdade.” — Paulo</blockquote>
+        <blockquote class="p-6 rounded-2xl border border-soft bg-white shadow-soft">“A Karen tem muita didática, aprendendo muito!” — Paula</blockquote>
+        <blockquote class="p-6 rounded-2xl border border-soft bg-white shadow-soft">“Sou instrutora de informática e já acompanhava a Karen. Nota 11.” — Sonia</blockquote>
+      </div>
+      <div class="text-center mt-6">
+        <a href="https://hotmart.com/pt-br/marketplace/produtos/excel-scout/M16852236B" target="_blank" class="underline">Ver mais depoimentos reais na Hotmart</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="border-t border-soft py-6 text-center text-sm text-neutral-600">
+    © <span id="year"></span> Excel Scout. Todos os direitos reservados. • <a href="https://instagram.com/karenabecia" target="_blank">@karenabecia</a>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
