@@ -1,161 +1,33 @@
-<!doctype html>
-<html lang="pt-br">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Excel Scout — Treinamento Nota 11: resolver problemas de verdade</title>
-  <meta name="description" content="Excel Scout: 17 aulas de até 11 minutos. Kit de sobrevivência em Excel para resolver problemas reais com formatação, funções, automações, tabelas dinâmicas[...]">
-  <meta name="keywords" content="excel, gráficos, aprender planilhas, aprender excel, exel, aprender fórmulas, aprender gráficos, Karen Abecia, curso de Excel online, curso de Excel preço, treinam[...]">
-  <meta property="og:title" content="Excel Scout — Treinamento Nota 11">
-  <meta property="og:description" content="17 aulas de até 11 minutos. Produtividade real em Excel, sem enrolação.">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="scout.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    :root{--brand-black:#111111;--brand-white:#ffffff;--brand-orange:#FF7A00}
-    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:var(--brand-white);color:var(--brand-black)}
-    .container{max-width:1120px;margin-left:auto;margin-right:auto;padding-left:1.5rem;padding-right:1.5rem;}
-    .badge{letter-spacing:.12em}
-    .shadow-soft{box-shadow:0 10px 30px rgba(0,0,0,.08)}
-    .ring-orange{box-shadow:0 0 0 8px rgba(255,122,0,.08)}
-    .hero-grad{background:radial-gradient(1200px 600px at 10% -10%, rgba(255,122,0,.12), rgba(255,255,255,0))}
-    .btn{display:inline-flex;align-items:center;gap:.5rem;padding:.75rem 1.25rem;border-radius:1rem;font-weight:600;justify-content:center;}
-    .btn-primary{background:var(--brand-orange);color:var(--brand-white)}
-    .btn-primary:hover{filter:brightness(.95)}
-    .btn-ghost{border:1px solid #ddd}
-    a{color:var(--brand-orange)}a:hover{opacity:.9}
-    .topbar{background:var(--brand-black);color:var(--brand-white)}
-    .accent{color:var(--brand-orange)}
-    .accent-bg{background:var(--brand-orange)}
-    .border-soft{border-color:#eaeaea}
-    form input{border:1px solid #ccc;padding:.75rem;border-radius:.75rem;width:100%}
-    section, header, footer {margin-bottom: 0;}
-    h1, h2, h3, p, ul, blockquote, form, .btn, .topbar .container, .depoimentos-grid, .container > div, .container > section {
-      text-align: center !important;
-      margin-left: auto !important;
-      margin-right: auto !important;
+<style>
+    .topbar {
+        background-color: white;
+        color: black;
+        border-bottom: 1px solid lightgray; /* Added bottom border */
     }
-    .grid {
-      gap: 2.5rem;
-      justify-content: center;
-      align-items: center;
-    }
-    .img-center {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    section { padding-top: 4rem !important; padding-bottom: 4rem !important; }
-    .topbar { padding-top: 0.5rem; padding-bottom: 0.5rem; box-shadow: 0 2px 8px rgba(0,0,0,.04);}
-    .topbar .btn { margin-left: 0.5rem; }
-    .depoimentos-grid { gap: 2rem; justify-content: center;}
-    footer { margin-top: 2rem; }
-    h1, h2, h3 {max-width:700px;}
-    p, ul, blockquote, form {max-width:600px;}
-    .topbar .btn { margin-left: 0.5rem; }
-    @media (max-width: 768px) {
-      .container { padding-left: 1rem; padding-right: 1rem; }
-      .grid { gap: 1.5rem; }
-    }
-  </style>
-</head>
-<body>
-  <header class="topbar">
-    <div class="container flex flex-col md:flex-row justify-center md:justify-between items-center">
-      <img src="scout.png" alt="Logo Excel Scout" class="h-14 mb-2 md:mb-0">
-      <div class="flex gap-3 justify-center">
-        <a href="#teste" class="btn btn-primary">📂 Baixar teste de Excel grátis</a>
-        <a href="#contato" class="btn btn-ghost">👥 Preciso treinar minha equipe</a>
-      </div>
-    </div>
-  </header>
+</style>
 
-  <section class="hero-grad">
-    <div class="container grid md:grid-cols-2 gap-12 items-center">
-      <div>
-        <h1 class="text-4xl font-extrabold leading-tight mb-6">Esqueça “básico vs. avançado”. <span class="accent">Excel é resolver problemas.</span></h1>
-        <p class="mt-4 text-lg">Depois de 20+ anos de treinamentos corporativos, entendi que um profissional de Excel precisa saber <strong>usar as principais ferramentas em conjunto para resolver problemas</strong>. O Excel não é sobre decorar fórmulas, é sobre produtividade.</p>
-        <ul class="mt-4 space-y-2 text-base">
-          <li>✔️ 17 aulas de até 11 minutos</li>
-          <li>✔️ 1 ano de acesso</li>
-          <li>✔️ Suporte Nota 11</li>
-        </ul>
-        <div class="mt-8">
-          <a href="#preco" class="btn btn-primary">🔥 Preciso disso agora</a>
-        </div>
-      </div>
-      <div class="img-center">
-        <img src="karen.png" alt="Karen Abecia" class="rounded-2xl shadow-soft max-w-xs w-full">
-      </div>
-    </div>
-  </section>
+<h1>esqueça "básico ou avançado"<br>Aqui eu te ensino a resolver problemas com Excel.</h1>
 
-  <!-- TESTE: Quebra os blocos, deixando o texto embaixo do formulário -->
-  <section id="teste" class="border-t border-soft">
-    <div class="container flex flex-col gap-8 items-center">
-      <div>
-        <h2 class="text-2xl font-bold mb-4">Baixe grátis o Teste de Excel</h2>
-        <form class="mt-4 space-y-3 max-w-md mx-auto">
-          <input type="text" placeholder="Seu nome" required>
-          <input type="tel" placeholder="WhatsApp" required>
-          <button type="submit" class="btn btn-primary w-full">📂 Baixar agora</button>
-        </form>
-        <p class="mt-2 text-sm text-center">O arquivo estará em <code>docs/assets/teste-excel.xlsx</code>.</p>
-      </div>
-      <div>
-        <p class="text-neutral-700 text-base">O teste contém questões baseadas em necessidades reais de empresas e é inspirado em processos seletivos de multinacionais.</p>
-      </div>
-    </div>
-  </section>
+<form>
+    <label for="file">Arquivo:</label>
+    <input type="file" id="file" name="file" accept=".xlsx" value="teste_excel.xlsx"> <!-- Updated file text -->
+    <!-- Removed the phrase "O arquivo estará em ..." -->
+</form>
 
-  <!-- PREÇO: Quebra os blocos, deixando "Você vai aprender" embaixo -->
-  <section id="preco" class="border-t border-soft">
-    <div class="container flex flex-col gap-8 items-center">
-      <div>
-        <h2 class="text-3xl font-bold mb-4">Oferta especial</h2>
-        <p class="mt-2 text-lg">17 aulas, missões práticas, extras e 1 ano de acesso. Suporte Nota 11 para tirar dúvidas.</p>
-        <div class="text-4xl font-extrabold mt-4 mb-2">R$ 197</div>
-        <p class="text-sm">Ou em até 12x de R$ 20,37</p>
-        <div class="mt-8">
-          <a href="https://pay.hotmart.com/M16852236B?checkoutMode=10" target="_blank" class="btn btn-primary">🔥 Preciso disso agora</a>
-        </div>
-      </div>
-      <div>
-        <h3 class="font-semibold mb-2 text-xl">Você vai aprender</h3>
-        <ul class="space-y-2 text-base">
-          <li>• Combinar ferramentas para resolver problemas</li>
-          <li>• Automatizar relatórios</li>
-          <li>• Criar dashboards e gráficos profissionais</li>
-          <li>• Evitar erros clássicos em planilhas</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <section id="depoimentos" class="border-t border-soft">
-    <div class="container">
-      <h2 class="text-3xl font-bold text-center mb-10">O que dizem os alunos</h2>
-      <div class="grid md:grid-cols-2 depoimentos-grid">
-        <blockquote class="p-6 rounded-2xl border border-soft bg-white shadow-soft mb-4">“Aprendi coisas muito além do que poderia imaginar, nota 11 ai vou eu.” — Henrique</blockquote>
-        <blockquote class="p-6 rounded-2xl border border-soft bg-white shadow-soft mb-4">“Antes achei que sabia, mas fazia amontoado de números. Agora aprendo de verdade.” — Paulo</blockquote>
-        <blockquote class="p-6 rounded-2xl border border-soft bg-white shadow-soft mb-4">“A Karen tem muita didática, aprendendo muito!” — Paula</blockquote>
-        <blockquote class="p-6 rounded-2xl border border-soft bg-white shadow-soft mb-4">“Sou instrutora de informática e já acompanhava a Karen. Nota 11.” — Sonia</blockquote>
-      </div>
-      <div class="text-center mt-6">
-        <a href="https://hotmart.com/pt-br/marketplace/produtos/excel-scout/M16852236B" target="_blank" class="underline">Ver mais depoimentos reais na Hotmart</a>
-      </div>
-    </div>
-  </section>
-
-  <footer class="border-t border-soft py-8 text-center text-sm text-neutral-600">
-    © <span id="year"></span> Excel Scout. Todos os direitos reservados. • <a href="https://instagram.com/karenabecia" target="_blank">@karenabecia</a>
-  </footer>
-
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
-</body>
-</html>
+<section>
+    <h2>Você vai aprender</h2>
+    <table style="border-collapse: collapse; width: 100%;">
+        <tr>
+            <td>Funções/Fórmulas</td>
+            <td>Gráficos</td>
+        </tr>
+        <tr>
+            <td>Tabela Dinâmica</td>
+            <td>Recursos de Produtividade</td>
+        </tr>
+        <tr>
+            <td>Filtros Inteligentes</td>
+            <td>Inteligência Artificial</td>
+        </tr>
+    </table> <!-- Replaced list with a table -->
+</section>
